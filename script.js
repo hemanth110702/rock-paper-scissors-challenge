@@ -1,3 +1,11 @@
+images = {
+  rock : "images/icon-rock.svg",
+  paper : "images/icon-paper.svg",
+  scissors : "images/icon-scissors.svg"
+}
+
+let userMove, computerMove;
+
 document.querySelector('.input-paper-button')
   .addEventListener('click', ()=>{
   userChoice('paper');
@@ -13,8 +21,7 @@ document.querySelector('.input-rock-button')
   userChoice('rock');
 });
 
-let userMove;
-let computerMove;
+
 
 function userChoice(x) {
   userMove = x;
@@ -22,7 +29,10 @@ function userChoice(x) {
   while (userMove == computerMove) {
     computerMove = computerChoice();
   }
-  findWinner(userMove, computerMove);
+  updateMoves(userMove, computerMove);
+  let result = "";
+  result = findWinner(userMove, computerMove);
+  displayResult(result);
 }
 
 function computerChoice() {
@@ -36,6 +46,13 @@ function computerChoice() {
   }
 } 
 
+function updateMoves(userMove, computerMove) {
+  const userPick = document.querySelector('.user-pick');
+  const housePick = document.querySelector('.house-pick');
+  userPick.src = images[userMove];
+  housePick.src = images[computerMove];
+}
+
 function findWinner(userMove, computerMove) {
  if (userMove === "paper" && computerMove === "rock") {
     return "WIN";
@@ -46,4 +63,9 @@ function findWinner(userMove, computerMove) {
   } else {
     return "LOSE";  
   }
+}
+
+function displayResult(result) {
+  let winOrLose = document.querySelector('.win-or-lose');
+  winOrLose.innerText = `You ${result}`;  
 }

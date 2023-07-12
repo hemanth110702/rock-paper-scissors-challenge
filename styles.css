@@ -37,7 +37,10 @@ body {
   justify-content: center;
   align-items: center;
   border: 2px solid green;
-  display: none;
+}
+
+.user-input button {
+  cursor: pointer;
 }
 
 .input-paper-scissors {
