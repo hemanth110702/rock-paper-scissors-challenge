@@ -1,0 +1,61 @@
+
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle 100vh at 50% 0%, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+
+.container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% auto;
+  border: 3px solid yellow;
+}
+
+.score-container {
+  width: 500px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.score-board {
+  text-align: center;
+  align-self: flex-start;
+}
+
+.user-input {
+  width: 450px;
+  height: 200px;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid green;
+  display: none;
+}
+
+.input-paper-scissors {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.user-and-computer-pick {
+  width: 450px;
+  height: 200px;
+  margin-top: 10%;
+  border: 2px solid pink;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
