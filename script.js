@@ -1,3 +1,8 @@
+rps_score = JSON.parse(localStorage.getItem('rps_score')) || 0;
+
+const score = document.querySelector('.score');
+score.innerText = rps_score;
+
 images = {
   rock : "images/icon-rock.svg",
   paper : "images/icon-paper.svg",
@@ -7,6 +12,9 @@ images = {
 let userMove, computerMove, result;
 const step1 = document.querySelector('.step-1');
 const step2 = document.querySelector('.step-2');
+const winOrLose = document.querySelector('.win-or-lose');
+const userPick = document.querySelector('.user-pick');
+const housePick = document.querySelector('.house-pick');
 
 document.querySelector('.input-paper-button')
   .addEventListener('click', ()=>{
@@ -46,10 +54,9 @@ function computerChoice() {
 } 
 
 function updateMoves(userMove, computerMove) {
-  const userPick = document.querySelector('.user-pick');
-  const housePick = document.querySelector('.house-pick');
   userPick.src = images[userMove];
   step1.classList.add('none');
+  step2.classList.remove('none');
   setTimeout(()=>{
     housePick.src = images[computerMove];
     findWinner(userMove, computerMove);
@@ -70,7 +77,32 @@ function findWinner(userMove, computerMove) {
 
 function displayResult(result) {
   setTimeout(()=>{
-    let winOrLose = document.querySelector('.win-or-lose');
-    winOrLose.innerText = `You ${result}`;  
+    winOrLose.innerHTML = `You ${result}
+    <button class='play-again'>Play Again</button>`;
+    updateScore(result);  
+    document.querySelector('.play-again')
+      .addEventListener('click', ()=>{
+        step2.classList.add('none');
+        step1.classList.remove('none');
+        resetStep2();
+      });
   },2000);
+}
+
+function updateScore(result) {
+  if (result === "WIN") {
+    rps_score += 1;
+  } else {
+    rps_score -= 1;
+  }
+  if (rps_score < 0) {
+    rps_score = 0;
+  }
+  score.innerText = rps_score;
+  localStorage.setItem('rps_score',JSON.stringify(rps_score));
+} 
+
+function resetStep2() {
+  winOrLose.innerText = "";
+  housePick.src = "";
 }
