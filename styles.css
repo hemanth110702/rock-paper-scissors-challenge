@@ -17,7 +17,7 @@ body {
 }
 
 .score-container {
-  width: 350px;
+  width: 400px;
   height: 60px;
   border: 2px solid hsl(217, 16%, 45%);
   border-radius: 8px;
@@ -95,7 +95,7 @@ body {
 }
 
 .input-scissors-button {
-  border: 10px solid yellow;
+  border: 10px solid orange;
 }
 
 .input-rock-button {
@@ -103,12 +103,39 @@ body {
 }
 
 .user-and-computer-pick {
-  width: 450px;
-  height: 200px;
-  margin-top: 10%;
-  border: 2px solid pink;
   display: flex;
   justify-content: space-between;
+  width: 300px;
+  height: 200px;
+  margin-top: 10%;
+  margin-left: -10%;
+  padding: 0 5%;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+}
+
+.you-picked-button {
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+  border-width: 13px;
+}
+
+.you-pick {
+  width: 40px;
+  height: 45px;
+}
+
+.null-house {
+  background-color: hsl(237, 49%, 15%);
+  opacity: 0.6;
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 45px;
 }
 
 

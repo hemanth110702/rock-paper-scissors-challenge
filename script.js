@@ -13,7 +13,7 @@ let userMove, computerMove, result;
 const step1 = document.querySelector('.step-1');
 const step2 = document.querySelector('.step-2');
 const winOrLose = document.querySelector('.win-or-lose');
-const userPick = document.querySelector('.user-pick');
+const youPick = document.querySelector('.you-pick');
 const housePick = document.querySelector('.house-pick');
 
 document.querySelector('.input-paper-button')
@@ -54,7 +54,9 @@ function computerChoice() {
 } 
 
 function updateMoves(userMove, computerMove) {
-  userPick.src = images[userMove];
+  youPick.src = images[userMove];
+  document.querySelector('.you-picked-button')
+    .classList.add(`input-${userMove}-button`);
   step1.classList.add('none');
   step2.classList.remove('none');
   setTimeout(()=>{
