@@ -1,8 +1,10 @@
-
-
 body {
   min-height: 100vh;
   background: radial-gradient(circle 100vh at 50% 0%, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.none {
+  display: none;
 }
 
 
