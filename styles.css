@@ -1,4 +1,5 @@
 body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
   min-height: 100vh;
   background: radial-gradient(circle 100vh at 50% 0%, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
@@ -7,49 +8,98 @@ body {
   display: none;
 }
 
-
 .container {
   width: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5% auto;
-  border: 3px solid yellow;
+  margin: 2% auto;
 }
 
 .score-container {
-  width: 500px;
-  border: 2px solid white;
+  width: 350px;
+  height: 60px;
+  border: 2px solid hsl(217, 16%, 45%);
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   padding: 2%;
 }
 
+.game-name {
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  line-height: 80%;
+}
+
 .score-board {
+  width: 90px;
+  font-size: 10px;
   text-align: center;
-  align-self: flex-start;
+  color: hsl(229, 64%, 46%);
+  background-color: white;
+  border-radius: 4px;
+}
+
+.score-header {
+  letter-spacing: 2px;
+}
+
+.inside-score-board {
+  padding: 10px;
+}
+
+.score {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(229, 25%, 31%);
+  margin: 0;
 }
 
 .user-input {
   width: 450px;
   height: 200px;
-  margin-top: 10%;
+  background-image: url(images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: 120px 120px;
+  background-position: center;
+  margin-top: 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid green;
+  gap: 10px;
 }
 
+.user-input button>img {
+  width: 35px;
+  height: 38px;
+}
 .user-input button {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  background-color: white;
   cursor: pointer;
 }
 
 .input-paper-scissors {
-  width: 200px;
+  width: 220px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
+}
+
+.input-paper-button {
+  border: 10px solid lightblue;
+}
+
+.input-scissors-button {
+  border: 10px solid yellow;
+}
+
+.input-rock-button {
+  border: 10px solid red;
 }
 
 .user-and-computer-pick {
