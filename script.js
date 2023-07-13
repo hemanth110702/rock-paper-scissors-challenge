@@ -12,11 +12,13 @@ images = {
 let userMove, computerMove, result;
 const step1 = document.querySelector('.step-1');
 const step2 = document.querySelector('.step-2');
+const userAndComputerpick = document.querySelector('.user-and-computer-pick');
 const winOrLose = document.querySelector('.win-or-lose');
 const youPickedButton = document.querySelector('.you-picked-button');
 const housePickedButton = document.querySelector('.house-picked-button');
 const youPick = document.querySelector('.you-pick');
 const housePick = document.querySelector('.house-pick');
+const resultContainer = document.querySelector('.result-container');
 
 document.querySelector('.input-paper-button')
   .addEventListener('click', ()=>{
@@ -83,9 +85,11 @@ function findWinner(userMove, computerMove) {
 
 function displayResult(result) {
   setTimeout(()=>{
+    resultContainer.classList.remove('none');
     winOrLose.innerHTML = `You ${result}
     <button class='play-again'>Play Again</button>`;
     updateScore(result);  
+
     document.querySelector('.play-again')
       .addEventListener('click', ()=>{
         step2.classList.add('none');
