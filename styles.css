@@ -104,20 +104,21 @@ body {
 }
 
 .user-and-computer-pick {
-  width: 500px;
-  display: grid;
-  grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
-  grid-template-areas: '. yp . wl . hp .';
-  justify-items: center;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   height: 200px;
   margin-top: 10%;
-  padding: 0 0%;
   font-weight: 600;
   font-size: 13px;
   text-align: center;
   color: white;
   border: 5px solid green;
+}
+
+.picked-header {
+  margin-top: -50px;
 }
 
 .you-picked-button,
@@ -148,6 +149,25 @@ body {
   font-weight: 800;
 }
 
+.result-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.play-again-button {
+  width: 125px;
+  height: 25px;
+  border-radius: 3px;
+  border: none;
+  color: red;
+  font-size: smaller;
+}
+
+.youWinLose {
+  width: 100px;
+  font-size: 2.5rem;
+
+}
 
 
 .attribution { font-size: 11px; text-align: center; }

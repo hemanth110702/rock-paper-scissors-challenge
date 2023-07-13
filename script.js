@@ -86,8 +86,8 @@ function findWinner(userMove, computerMove) {
 function displayResult(result) {
   setTimeout(()=>{
     resultContainer.classList.remove('none');
-    winOrLose.innerHTML = `You ${result}
-    <button class='play-again'>Play Again</button>`;
+    winOrLose.innerHTML = `<p class="youWinLose">You ${result}</p>
+    <button class='play-again-button'>Play Again</button>`;
     updateScore(result);  
 
     document.querySelector('.play-again')
