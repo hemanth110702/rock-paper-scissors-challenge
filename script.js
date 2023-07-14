@@ -86,15 +86,14 @@ function findWinner(userMove, computerMove) {
 function displayResult(result) {
   setTimeout(()=>{
     resultContainer.classList.remove('none');
-    winOrLose.innerHTML = `<p class="youWinLose">You ${result}</p>
-    <button class='play-again-button'>Play Again</button>`;
+    winOrLose.innerHTML = `<p class="youWinLose">YOU ${result}</p>
+    <button class='play-again-button' onclick="playAgain()" >Play Again</button>`;
     updateScore(result);  
 
     document.querySelector('.play-again')
       .addEventListener('click', ()=>{
         step2.classList.add('none');
         step1.classList.remove('none');
-        resetStep2();
       });
   },2000);
 }
@@ -112,7 +111,13 @@ function updateScore(result) {
   localStorage.setItem('rps_score',JSON.stringify(rps_score));
 } 
 
-function resetStep2() {
-  winOrLose.innerText = "";
-  housePick.src = "";
+function playAgain() {
+  step2.classList.add('none');
+  resultContainer.classList.add('none');
+  step1.classList.remove('none');
+  housePick.classList.add('none');
+  housePickedButton.classList.add('null-house');
+  housePickedButton.classList.remove(`input-${computerMove}-button`);
+  youPickedButton.classList.remove(`input-${userMove}-button`);
+  
 }
