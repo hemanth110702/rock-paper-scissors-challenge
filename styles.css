@@ -15,7 +15,6 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 4% auto;
-  border: 5px solid green;
 }
 
 .score-container {
@@ -115,13 +114,11 @@ body {
   font-size: 13px;
   text-align: center;
   color: white;
-  border: 5px solid blue;
 }
 
 .picked-header {
   width: 150px;
   height: 20px;
-  border: 2px solid orange;
   margin-top: 0;
   margin-bottom: 30px;
   justify-self: start;
@@ -129,7 +126,6 @@ body {
 
 .picked-btn-img {
   padding: auto auto;
-  border: 5px solid brown;
 }
 
 .null-house {
@@ -143,7 +139,6 @@ body {
   justify-self: center;
   border: none;
   border-radius: 50%;
-
 }
 
 .you-picked-button,
@@ -196,42 +191,37 @@ body {
   position: relative;
 }
 
-.you-picked {
-  border: 5px solid yellow;
-}
 
 .house-picked,
 .you-picked {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 5px solid red;
 }
 
 
 .circle {
-  display: none;
-  width: 170px;
-  height: 170px;
+  width: 215px;
+  height: 215px;
   border-radius: 50%;
   background-color: blue;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
 
 .circle:nth-child(3) {
-  width: 240px;
-  height: 240px;
-  background-color: green;
+  width: 300px;
+  height: 300px;
+  background-color: hsl(237, 49%, 15%);
   z-index: -3;
 }
 
 .circle:nth-child(4) {
-  width: 330px;
-  height: 330px;
+  width: 430px;
+  height: 430px;
   background-color: blue; 
   z-index: -4;
 }
