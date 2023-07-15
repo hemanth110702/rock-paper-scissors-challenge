@@ -19,6 +19,8 @@ const bfButton = document.querySelector('.bf-button');
 const youPick = document.querySelector('.you-pick');
 const housePick = document.querySelector('.house-pick');
 const resultContainer = document.querySelector('.result-container');
+const winnerYou = document.querySelector('.winner-you');
+const winnerHouse = document.querySelector('.winner-house');
 
 document.querySelector('.input-paper-button')
   .addEventListener('click', ()=>{
@@ -91,11 +93,12 @@ function displayResult(result) {
     <button class='play-again-button' onclick="playAgain()" >Play Again</button>`;
     updateScore(result);  
 
-    document.querySelector('.play-again')
-      .addEventListener('click', ()=>{
-        step2.classList.add('none');
-        step1.classList.remove('none');
-      });
+    if (result === "WIN") {
+      winnerYou.classList.remove('none');
+    } else {
+      winnerHouse.classList.remove('none'); 
+    }
+
   },2000);
 }
 
@@ -110,7 +113,7 @@ function updateScore(result) {
   }
   score.innerText = rps_score;
   localStorage.setItem('rps_score',JSON.stringify(rps_score));
-} 
+}
 
 function playAgain() {
   step2.classList.add('none');
@@ -121,4 +124,6 @@ function playAgain() {
   bfButton.classList.remove('house-picked-button');
   bfButton.classList.remove(`input-${computerMove}-button`);
   youPickedButton.classList.remove(`input-${userMove}-button`);
+  winnerYou.classList.add('none');
+  winnerHouse.classList.add('none');
 }
