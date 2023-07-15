@@ -92,7 +92,7 @@ function displayResult(result) {
   setTimeout(()=>{
     resultContainer.classList.remove('none');
     winOrLose.innerHTML = `<p class="youWinLose">YOU ${result}</p>
-    <button class='play-again-button' onclick="playAgain()" >Play Again</button>`;
+    <button class='play-again-button' onclick="playAgain()" >PLAY AGAIN</button>`;
     updateScore(result);  
 
     if (result === "WIN") {
@@ -130,15 +130,12 @@ function playAgain() {
   winnerHouse.classList.add('none');
 }
 
-closeIcon.addEventListener('click', ()=>{
-  document.querySelector('.rules-container').classList.add('none');
-});
-
 function displayRules() {
   showRules.classList.remove('none');
   showRules.classList.add('rules-container');
-  showRules.innerHTML = `<div class="rules-header">RULES <span class="close-icon">X</span></div>
-  <img class="rules-img" src="images/image-rules.svg" alt="">`;
+  showRules.innerHTML = `<div class="rules-header">RULES </div>
+  <img class="rules-img" src="images/image-rules.svg" alt="">
+  <span class="close-icon">X</span>`;
 
   const closeIcon = document.querySelector('.close-icon');
 

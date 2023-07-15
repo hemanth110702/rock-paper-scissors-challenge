@@ -42,6 +42,10 @@ body {
   letter-spacing: 2px;
 }
 
+.logo {
+  width: 100px;
+}
+
 .inside-score-board {
   padding: 10px;
 }
@@ -116,12 +120,7 @@ body {
   height: 20px;
   margin-top: 0;
   margin-bottom: 30px;
-  justify-self: start;
   letter-spacing: 2px;
-}
-
-.picked-btn-img {
-  padding: auto auto;
 }
 
 .null-house {
@@ -163,20 +162,25 @@ body {
 }
 
 .play-again-button {
-  width: 125px;
-  height: 25px;
-  border-radius: 3px;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
   border: none;
-  color: red;
+  color: blue;
   font-size: smaller;
   cursor: pointer;
+  padding: 10px ;
+  letter-spacing: 2px;
 }
 
 .youWinLose {
-  width: 125px;
+  width: 150px;
   font-size: 2rem;
   margin: 0;
   font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 
@@ -266,12 +270,219 @@ body {
 }
 
 .close-icon {
+  position: absolute;
   color: hsl(217, 16%, 45%);
   font-weight: lighter;
   margin-right: 10px;
   cursor: pointer;
+  right: 0;
 }
 
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 300px;
+  }
+
+  .score-container {
+    width: 250px;
+    grid-area: 'header';
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 70px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .user-input {
+    width: 300px;
+    height: 200px;
+    background-size: 60% 6  0%;
+    background-position: center;
+    margin-top: 20%;
+  }
+  
+  
+  .user-input button {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .input-paper-scissors {
+    width: 240px;
+  }
+
+  .rules-button {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .close-icon {
+    bottom: 10%;
+    left: 50%;
+
+  }
+
+  .rules-header {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .rules-container {
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+
+  .rules-img {
+    margin-top: 20%;
+  }
+
+  .user-and-computer-pick {
+    width: 250px;
+    height: 280px; 
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 80px 80px;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    align-content: center;
+    grid-template-areas: 
+          'youPickedContainer housePickedContainer'
+          'resultContainer resultContainer';
+  }
+
+  .you-picked {
+    grid-area: youPickedContainer;
+    margin-left: -30px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+      'picked-btn-img'
+      'you-picked-header';
+  }
+
+  .you-picked .picked-btn-img {
+    grid-area: picked-btn-img;
+  }
+  
+  .you-picked > p {
+    grid-area: you-picked-header;
+    margin-top: 20px;
+  }
+
+  .house-picked {
+    grid-area: housePickedContainer;
+    margin-left: -50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+      'picked-btn-img'
+      'house-picked-header';
+  }
+
+  .house-picked .picked-btn-img {
+    grid-area: picked-btn-img;
+  }
+  
+  .house-picked > p {
+    grid-area: house-picked-header;
+    margin-top: 20px;
+  }
+
+  .result-container {
+    grid-area: resultContainer;
+    align-items: center;
+
+  }
+
+  .picked-header {
+    margin: 0;
+  }
+
+  .null-house {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .you-picked-button,
+  .house-picked-button {
+    width: 100px;
+    height: 100px;
+    border-width: 12px;
+    margin: 0;
+  }
+  
+  .you-pick,
+  .house-pick {
+    width: 35px;
+    height: 35px;
+  }
+
+  .result-container {
+    margin: auto auto;
+  }
+
+  .circle {
+    width: 130px;
+    height: 130px;
+    left: 50%;
+    top: 40%;
+  }
+  
+  .circle:nth-child(2) {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .circle:nth-child(3) {
+    width: 220px;
+    height: 220px;
+    background-color: rgba(255, 255, 255, 0.03); 
+    z-index: -4;
+  }
+
+  .play-again-button {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: blue;
+    padding: 10px ;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  
+  .youWinLose {
+    width: 150px;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+  }
+  
+
+.attribution {
+  display: none;
+}
+
+
+}
