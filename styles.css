@@ -62,9 +62,9 @@ body {
   height: 200px;
   background-image: url(images/bg-triangle.svg);
   background-repeat: no-repeat;
-  background-size: 120px 120px;
+  background-size: 140px 140px;
   background-position: center;
-  margin-top: 7%;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,40 +73,40 @@ body {
 }
 
 .user-input button>img {
-  width: 35px;
-  height: 38px;
+  width: 38px;
+  height: 41px;
 }
+
 .user-input button {
-  width: 90px;
-  height: 90px;
-  border-radius: 45px;
-  background-color: white;
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+  background-color: rgb(230, 230, 230);
   cursor: pointer;
 }
 
 .input-paper-scissors {
-  width: 220px;
+  width: 270px;
   display: flex;
   justify-content: space-between;
 }
 
 .input-paper-button {
-  border: 10px solid lightblue;
+  border: 12px solid rgb(73, 133, 255);
 }
 
 .input-scissors-button {
-  border: 10px solid orange;
+  border: 12px solid orange;
 }
 
 .input-rock-button {
-  border: 10px solid red;
+  border: 12px solid red;
 }
 
 .user-and-computer-pick {
   width: 350px;
   display: flex;
   justify-content: space-around;
-  /*align-items: center;*/
   height: 200px;
   margin-top: 10%;
   font-weight: 600;
@@ -125,7 +125,7 @@ body {
   width: 110px;
   height: 110px;
   border-radius: 55px;
-  border-width: 13px;
+  border-width: 12px;
 }
 
 .you-pick,
@@ -170,6 +170,10 @@ body {
   margin-bottom: 5px;
   font-weight: 700;
 }
+
+
+
+
 
 
 .attribution { font-size: 11px; text-align: center; }

@@ -119,5 +119,4 @@ function playAgain() {
   housePickedButton.classList.add('null-house');
   housePickedButton.classList.remove(`input-${computerMove}-button`);
   youPickedButton.classList.remove(`input-${userMove}-button`);
-  
 }
