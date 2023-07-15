@@ -2,6 +2,8 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   min-height: 100vh;
   background: radial-gradient(circle 100vh at 50% 0%, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  padding: 0;
+  margin: 0;
 }
 
 .none {
@@ -25,13 +27,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 2%;
-}
-
-.game-name {
-  font-weight: 600;
-  font-size: 25px;
-  color: white;
-  line-height: 80%;
 }
 
 .score-board {
@@ -122,6 +117,7 @@ body {
   margin-top: 0;
   margin-bottom: 30px;
   justify-self: start;
+  letter-spacing: 2px;
 }
 
 .picked-btn-img {
@@ -225,6 +221,57 @@ body {
   background-color: rgba(255, 255, 255, 0.03); 
   z-index: -4;
 }
+
+.rules-button {
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  right: 10%;
+  bottom: 20%;
+  border: 2px solid hsl(217, 16%, 45%);
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: hsl(237, 49%, 15%);
+  color: white;
+  font-size: 0.7rem; 
+}
+
+.rules-container {
+  display: flex;
+  flex-direction: column ;
+  position: fixed;
+  margin: auto auto;
+  top: 23%;
+  background-color: white;
+  box-shadow:  0 0 490px black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 230px;
+  height: 225px;
+}
+
+.rules-img {
+  width: 200px;
+  height: 180px;
+  align-self: center;
+  margin-top: 10%;
+}
+
+.rules-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  font-weight: 700;
+  color: hsl(229, 25%, 31%);
+}
+
+.close-icon {
+  color: hsl(217, 16%, 45%);
+  font-weight: lighter;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

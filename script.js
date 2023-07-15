@@ -21,6 +21,8 @@ const housePick = document.querySelector('.house-pick');
 const resultContainer = document.querySelector('.result-container');
 const winnerYou = document.querySelector('.winner-you');
 const winnerHouse = document.querySelector('.winner-house');
+const showRules = document.querySelector('.show-rules');
+
 
 document.querySelector('.input-paper-button')
   .addEventListener('click', ()=>{
@@ -126,4 +128,22 @@ function playAgain() {
   youPickedButton.classList.remove(`input-${userMove}-button`);
   winnerYou.classList.add('none');
   winnerHouse.classList.add('none');
+}
+
+closeIcon.addEventListener('click', ()=>{
+  document.querySelector('.rules-container').classList.add('none');
+});
+
+function displayRules() {
+  showRules.classList.remove('none');
+  showRules.classList.add('rules-container');
+  showRules.innerHTML = `<div class="rules-header">RULES <span class="close-icon">X</span></div>
+  <img class="rules-img" src="images/image-rules.svg" alt="">`;
+
+  const closeIcon = document.querySelector('.close-icon');
+
+  closeIcon.addEventListener('click', ()=> {
+    showRules.classList.remove('rules-container');
+    showRules.classList.add('none');
+  })
 }
