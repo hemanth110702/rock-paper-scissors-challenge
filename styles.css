@@ -10,10 +10,12 @@ body {
 
 .container {
   width: 700px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2% auto;
+  margin: 4% auto;
+  border: 5px solid green;
 }
 
 .score-container {
@@ -64,7 +66,7 @@ body {
   background-repeat: no-repeat;
   background-size: 140px 140px;
   background-position: center;
-  margin-top: 10%;
+  margin-top: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,20 +75,20 @@ body {
 }
 
 .user-input button>img {
-  width: 38px;
-  height: 41px;
+  width: 40px;
+  height: 45px;
 }
 
 .user-input button {
-  width: 110px;
-  height: 110px;
-  border-radius: 55px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   background-color: rgb(230, 230, 230);
   cursor: pointer;
 }
 
 .input-paper-scissors {
-  width: 270px;
+  width: 290px;
   display: flex;
   justify-content: space-between;
 }
@@ -104,53 +106,68 @@ body {
 }
 
 .user-and-computer-pick {
-  width: 350px;
+  width: 500px;
   display: flex;
   justify-content: space-around;
-  height: 200px;
+  height: 250px;
   margin-top: 10%;
   font-weight: 600;
   font-size: 13px;
   text-align: center;
   color: white;
+  border: 5px solid blue;
 }
 
 .picked-header {
+  width: 150px;
+  height: 20px;
+  border: 2px solid orange;
   margin-top: 0;
   margin-bottom: 30px;
+  justify-self: start;
 }
 
-.you-picked-button,
-.house-picked-button {
-  width: 110px;
-  height: 110px;
-  border-radius: 55px;
-  border-width: 12px;
-}
-
-.you-pick,
-.house-pick {
-  width: 40px;
-  height: 45px;
+.picked-btn-img {
+  padding: auto auto;
+  border: 5px solid brown;
 }
 
 .null-house {
   background-color: hsl(237, 49%, 15%);
   opacity: 0.6;
-  width: 90px;
-  height: 90px;
-  margin-top: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  justify-self: center;
   border: none;
-  border-radius: 45px;
+  border-radius: 50%;
+
+}
+
+.you-picked-button,
+.house-picked-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-width: 18px;
+}
+
+.you-pick,
+.house-pick {
+  width: 50px;
+  height: 50px;
 }
 
 .win-or-lose {
-  font-weight: 800;
+  width: 125px;
+  font-weight: 700;
 }
 
 .result-container {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   align-self: center ;
 }
 
@@ -165,16 +182,59 @@ body {
 }
 
 .youWinLose {
-  width: 200px;
+  width: 125px;
   font-size: 2rem;
-  margin-bottom: 5px;
+  margin: 0;
   font-weight: 700;
 }
 
 
+.house-picked,
+.you-picked {
+  width: 150px;
+  height: 220px;
+  position: relative;
+}
+
+.you-picked {
+  border: 5px solid yellow;
+}
+
+.house-picked,
+.you-picked {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 5px solid red;
+}
 
 
+.circle {
+  display: none;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
 
+.circle:nth-child(3) {
+  width: 240px;
+  height: 240px;
+  background-color: green;
+  z-index: -3;
+}
+
+.circle:nth-child(4) {
+  width: 330px;
+  height: 330px;
+  background-color: blue; 
+  z-index: -4;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

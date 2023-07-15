@@ -15,7 +15,7 @@ const step2 = document.querySelector('.step-2');
 const userAndComputerpick = document.querySelector('.user-and-computer-pick');
 const winOrLose = document.querySelector('.win-or-lose');
 const youPickedButton = document.querySelector('.you-picked-button');
-const housePickedButton = document.querySelector('.house-picked-button');
+const bfButton = document.querySelector('.bf-button');
 const youPick = document.querySelector('.you-pick');
 const housePick = document.querySelector('.house-pick');
 const resultContainer = document.querySelector('.result-container');
@@ -63,8 +63,9 @@ function updateMoves(userMove, computerMove) {
   step1.classList.add('none');
   step2.classList.remove('none');
   setTimeout(()=>{
-    housePickedButton.classList.remove('null-house');
-    housePickedButton.classList.add(`input-${computerMove}-button`);
+    bfButton.classList.remove('null-house');
+    bfButton.classList.add('house-picked-button');
+    bfButton.classList.add(`input-${computerMove}-button`);
     housePick.classList.remove('none');
     housePick.src = images[computerMove];
     findWinner(userMove, computerMove);
@@ -116,7 +117,8 @@ function playAgain() {
   resultContainer.classList.add('none');
   step1.classList.remove('none');
   housePick.classList.add('none');
-  housePickedButton.classList.add('null-house');
-  housePickedButton.classList.remove(`input-${computerMove}-button`);
+  bfButton.classList.add('null-house');
+  bfButton.classList.remove('house-picked-button');
+  bfButton.classList.remove(`input-${computerMove}-button`);
   youPickedButton.classList.remove(`input-${userMove}-button`);
 }
