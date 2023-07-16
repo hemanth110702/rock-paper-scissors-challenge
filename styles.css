@@ -166,8 +166,9 @@ body {
   height: 40px;
   border-radius: 5px;
   border: none;
-  color: blue;
+  color: hsl(229, 25%, 31%);
   font-size: smaller;
+  font-weight: 600;
   cursor: pointer;
   padding: 10px ;
   letter-spacing: 2px;
@@ -228,16 +229,17 @@ body {
 
 .rules-button {
   position: absolute;
-  width: 100px;
-  height: 25px;
   right: 10%;
   bottom: 20%;
-  border: 2px solid hsl(217, 16%, 45%);
+  border: 1.5px solid hsl(217, 16%, 45%);
   border-radius: 4px;
   cursor: pointer;
   background-color: hsl(237, 49%, 15%);
   color: white;
-  font-size: 0.7rem; 
+  font-size: 9px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  padding: 8px 25px;
 }
 
 .rules-container {
@@ -249,7 +251,7 @@ body {
   background-color: white;
   box-shadow:  0 0 490px black;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   width: 230px;
   height: 225px;
 }
@@ -275,7 +277,13 @@ body {
   font-weight: lighter;
   margin-right: 10px;
   cursor: pointer;
-  right: 0;
+  right: 5px;
+}
+
+.icon-close {
+  width: 25px;
+  height: 20px;
+  font-weight: bolder;
 }
 
 
@@ -327,8 +335,7 @@ body {
 
   .close-icon {
     bottom: 10%;
-    left: 50%;
-
+    left: 45%;
   }
 
   .rules-header {
@@ -464,7 +471,7 @@ body {
     height: 40px;
     border-radius: 5px;
     border: none;
-    color: blue;
+    color: hsl(229, 25%, 31%);
     padding: 10px ;
     letter-spacing: 2px;
     cursor: pointer;

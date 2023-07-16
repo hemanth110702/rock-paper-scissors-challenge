@@ -135,7 +135,7 @@ function displayRules() {
   showRules.classList.add('rules-container');
   showRules.innerHTML = `<div class="rules-header">RULES </div>
   <img class="rules-img" src="images/image-rules.svg" alt="">
-  <span class="close-icon">X</span>`;
+  <span class="close-icon"><img class = "icon-close" src="images/icons8-close.svg" alt = "close-icon"></span>`;
 
   const closeIcon = document.querySelector('.close-icon');
 
