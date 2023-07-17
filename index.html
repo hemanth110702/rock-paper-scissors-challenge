@@ -15,73 +15,82 @@
 <body>
   <div class="container">
 
-    <div class="score-container">
+    <header class="score-container">
       <img class="logo" src="images/logo.svg" alt="game-logo">
       <div class="score-board">
-       <div class="inside-score-board"> <span class="score-header">SCORE</span><br>
-        <span class="score"></span></div>
+        <span class="score-header">SCORE</span><br>
+        <span class="score"></span>
       </div>
-    </div>
-
-    <div class="step-1">
-      <div class="user-input">
-        <div class="input-paper-scissors">
-          <button class="input-paper-button">
-            <img src="images/icon-paper.svg" alt="paper">
-          </button>
-          <button class="input-scissors-button">
-            <img src="images/icon-scissors.svg" alt="scissors">
-          </button>
-        </div>
-        <div class="input-stone">
-          <button class="input-rock-button">
-            <img src="images/icon-rock.svg" alt="">
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="step-2 none">
-      <div class="user-and-computer-pick">
-        <div class="you-picked">
-          <p class="picked-header">YOU PICKED</p>
-          <div class="picked-btn-img">
-            <button class="you-picked-button">
-              <img class="you-pick" src="" alt="">
-            </button>
+    </header>
+    
+    <main>
+      <div class="step-1">
+        <div class="user-input">
+          <div class="input-paper-scissors">
+              <div class="paper">
+                <button class="input-paper-button btn-style">
+                  <img src="images/icon-paper.svg" alt="paper">
+                </button>
+              </div>
+              <div class="scissors">
+                <button class="input-scissors-button btn-style">
+                  <img src="images/icon-scissors.svg" alt="scissors">
+                </button>
+              </div>
           </div>
-          <div class="winner-you none">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-        <div class="result-container none ">
-          <div class="win-or-lose">
-          </div>
-        </div>
-        <div class="house-picked">
-          <p class="picked-header">THE HOUSE PICKED</p>
-            <div class="picked-btn-img">
-              <button class="bf-button null-house">
-                <img class="house-pick none" src="" alt="">
+          <div class="input-rock">
+            <div class="rock">
+              <button class="input-rock-button btn-style">
+                <img src="images/icon-rock.svg" alt="">
               </button>
             </div>
-            <div class="winner-house none">
+          </div>
+        </div>
+      </div>
+    
+      <div class="step-2 none">
+        <div class="picked-container">
+          <div class="user-picked"> 
+            <p class="user-header">YOU PICKED</p> 
+            <div class="user-house user-choice"> 
+              <button class="user-picked-btn btn-style"> 
+                <img class="user-btn-img" src="" alt="">
+              </button>
+            </div>  
+            <div class="winner-you ">
               <div class="circle"></div>
               <div class="circle"></div>
               <div class="circle"></div>
             </div>
+          </div>
+          <div class="result-container win-or-lose none ">
+          </div>
+          <div class="house-picked">
+            <p class="house-header">THE HOUSE PICKED</p>
+            <div class="user-house house-choice"> 
+              <button class="house-picked-btn null-house btn-style">
+                <img class="house-btn-img none" src="" alt="">
+              </button>
+            </div>
+            <!-- <div class="winner-house none">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div> -->
+          </div>
         </div>
       </div>
-    </div>
-    <div class="show-rules none">
-    </div>
+
+      <div class="show-rules none">
+      </div>
+
+      <button class="rules-button" onclick="displayRules();">RULES</button>
+    </main>
+
   </div>
-  <button class="rules-button" onclick="displayRules();">RULES</button>
     
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/hemanth110702">Mamidi Hemanth Kumar</a>.
   </div>
 
