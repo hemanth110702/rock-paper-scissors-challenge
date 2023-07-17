@@ -18,7 +18,7 @@ body {
 }
 
 .score-container {
-  width: 400px;
+  width: 450px;
   height: 60px;
   border: 2px solid hsl(217, 16%, 45%);
   border-radius: 8px;
@@ -57,7 +57,7 @@ body {
   height: 200px;
   background-image: url(images/bg-triangle.svg);
   background-repeat: no-repeat;
-  background-size: 140px 140px;
+  background-size: 160px 160px;
   background-position: center;
   margin-top: 15%;
   display: flex;
@@ -110,7 +110,7 @@ body {
 }
 
 .input-paper-scissors {
-  width: 300px;
+  width: 330px;
   display: flex;
   justify-content: space-between;
 }
@@ -259,12 +259,13 @@ body {
   position: fixed;
   margin: auto auto;
   top: 23%;
+  left: 39%;
   background-color: white;
   box-shadow:  0 0 490px black;
   border-radius: 5px;
   padding: 20px;
-  width: 230px;
-  height: 225px;
+  width: 210px;
+  height: 240px;
 }
 
 
@@ -291,6 +292,7 @@ body {
   margin-right: 10px;
   cursor: pointer;
   right: 5px;
+
 }
 
 .icon-close {
@@ -310,16 +312,20 @@ body {
 
   .score-container {
     width: 250px;
-    grid-area: 'header';
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
+    padding: 10px;
   }
 
   .logo {
     width: 70px;
     align-self: center;
     justify-self: center;
+    margin-left: 10px;
+  }
+
+  .score-board {
+    width: 55px;
   }
 
   .user-input {
@@ -357,9 +363,10 @@ body {
   }
 
   .rules-container {
-    align-content: center;
-    justify-content: center;
     position: fixed;
+    margin: auto auto;
+    justify-content: center;
+    align-content: center;
     top: 0;
     left: 0;
     width: 100%;

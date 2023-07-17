@@ -69,6 +69,7 @@ function updateMoves(userMove, computerMove) {
   step2.classList.remove('none');
   setTimeout(()=>{
     housePickedBtn.classList.remove('null-house');
+    housePickedBtn.classList.add('btn-style');
     housePickedBtn.classList.add(`input-${computerMove}-button`);
     houseChoice.classList.add(`${computerMove}`);
     houseBtnImg.classList.remove('none');
@@ -123,6 +124,7 @@ function playAgain() {
   resultContainer.classList.add('none');
   step1.classList.remove('none');
   houseBtnImg.classList.add('none');
+  housePickedBtn.classList.remove('btn-style');
   housePickedBtn.classList.add('null-house');
   housePickedBtn.classList.remove('house-picked-button');
   housePickedBtn.classList.remove(`input-${computerMove}-button`);
@@ -138,7 +140,7 @@ function displayRules() {
   showRules.classList.add('rules-container');
   showRules.innerHTML = `<div class="rules-header">RULES </div>
   <img class="rules-img" src="images/image-rules.svg" alt="">
-  <span class="close-icon"><img class = "icon-close" src="images/icons8-close.svg" alt = "close-icon"></span>`;
+  <span class="close-icon"><img class = "icon-close" src="images/icons8-wrong.svg" alt = "close-icon"></span>`;
 
   const closeIcon = document.querySelector('.close-icon');
 
