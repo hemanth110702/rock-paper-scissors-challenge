@@ -53,18 +53,22 @@ body {
 }
 
 .user-input {
+  position: relative;
   width: 450px;
   height: 200px;
-  background-image: url(images/bg-triangle.svg);
-  background-repeat: no-repeat;
-  background-size: 160px 160px;
-  background-position: center;
-  margin-top: 15%;
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+}
+
+.bg-triangle {
+  position: absolute;
+  width: 200px;
+  margin-top: 30px;
+  z-index: -5;
 }
 
 .btn-style {
@@ -110,7 +114,7 @@ body {
 }
 
 .input-paper-scissors {
-  width: 330px;
+  width: 320px;
   display: flex;
   justify-content: space-between;
 }
