@@ -137,15 +137,17 @@ function playAgain() {
 
 function displayRules() {
   showRules.classList.remove('none');
-  showRules.classList.add('rules-container');
-  showRules.innerHTML = `<div class="rules-header">RULES </div>
+  showRules.innerHTML = `
+  <div class="bg-white">
+  <div class="rules-container">
+  <div class="rules-header">RULES </div>
   <img class="rules-img" src="images/image-rules.svg" alt="">
-  <span class="close-icon"><img class = "icon-close" src="images/icons8-wrong.svg" alt = "close-icon"></span>`;
+  <span class="close-icon"><img class = "icon-close" src="images/icons8-wrong.svg" alt = "close-icon"></span>
+  </div></div>`;
 
   const closeIcon = document.querySelector('.close-icon');
 
   closeIcon.addEventListener('click', ()=> {
-    showRules.classList.remove('rules-container');
     showRules.classList.add('none');
   })
 }
