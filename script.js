@@ -127,6 +127,8 @@ function playAgain() {
   housePickedBtn.classList.remove('house-picked-button');
   housePickedBtn.classList.remove(`input-${computerMove}-button`);
   userPickedBtn.classList.remove(`input-${userMove}-button`);
+  houseChoice.classList.remove(`${computerMove}`);
+  userChoice.classList.remove(`${userMove}`);
   winnerYou.classList.add('none');
   winnerHouse.classList.add('none');
 }
