@@ -77,7 +77,7 @@ body {
   border-radius: 50%;
   background-color: rgb(230, 230, 230);
   cursor: pointer;
-  box-shadow: inset 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.1);
   border: none;
 }
 
@@ -345,28 +345,32 @@ body {
     margin-top: 50px;
   }
 
+  
+  .btn-style img {
+    width: 30px;
+    height: 35px;
+  }
+  
+  
   .btn-style {
     width: 80px;
     height: 80px;
   }
 
-  .btn-style img {
-    width: 35px;
-    height: 40px;
+
+  .paper, .rock, .scissors {
+    width: 105px;
+    height: 105px;
   }
   
-  .paper, .scissors, .rock {
-    width: 100px;
-    height: 100px;
-  }
-    
   .input-paper-scissors {
-    width: 240px;
+    width: 250px;
   }
 
   .rules-button {
+    position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
   }
 
@@ -403,83 +407,71 @@ body {
   }
 
   .picked-container {
-    border: 2px solid green;
     width: 250px;
-    height: 280px; 
-    margin-top: 15%;
+    height: 320px; 
+    margin-top: 20%;
     display: grid;
     grid-template-columns: 80px 80px;
-    grid-template-rows: auto auto;
+    grid-template-rows: 250px 70px;
     justify-content: space-between;
     align-content: center;
     grid-template-areas: 
-          'youPickedContainer housePickedContainer'
+          'user-picked house-picked'
           'resultContainer resultContainer';
   }
 
   .user-picked {
-    grid-area: youPickedContainer;
+    grid-area: user-picked;
     margin-left: -30px;
     display: grid;
-    justify-content: center;
-    align-content: center;
+    grid-template-rows: 150px 1fr;
     grid-template-areas:
-      'user-picked-btn'
-      'user-picked-header';
+      'user-choice'
+      'user-header';
   }
 
    .user-choice {
-    grid-area: user-picked-btn;
+    grid-area: user-choice;
   }
   
   .user-header {
-    grid-area: user-picked-header;
-    margin-top: 20px;
+    grid-area: user-header;
   }
 
   .house-picked {
-    grid-area: housePickedContainer;
+    grid-area: house-picked;
     margin-left: -50px;
     display: grid;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    grid-template-rows: 150px 1fr;
     grid-template-areas:
-      'house-picked-btn'
-      'house-picked-header';
+      'house-choice'
+      'house-header';
   }
 
   .house-choice{
-    grid-area: house-picked-btn;
+    grid-area: house-choice;
   }
   
   .house-header {
-    grid-area: house-picked-header;
-    margin-top: 20px;
+    grid-area: house-header;
+    margin: auto auto;
+    margin-top: 0;
+
   }
 
   .result-container {
     grid-area: resultContainer;
-    align-items: center;
-
+    width: 200px;
+    text-align: center;
+    margin: auto auto;
   }
 
-  .user-header {
-    margin: 0;
-  }
 
   .null-house {
     width: 80px;
     height: 80px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .house-picked-btn,
-  .user-picked-btn {
-    width: 100px;
-    height: 100px;
-    border-width: 12px;
-    margin: 0;
   }
   
   .user-btn-img,
@@ -488,17 +480,11 @@ body {
     height: 35px;
   }
 
-   .result-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  } 
-
   .circle {
     width: 130px;
     height: 130px;
     left: 50%;
-    top: 40%;
+    top: 34%;
   }
   
   .circle:nth-child(2) {
@@ -525,11 +511,12 @@ body {
   }
   
   .youWinLose {
-    width: 150px;
-    font-size: 2rem;
-    margin: 0;
+    width: 100%;
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 10px;
+    margin-top: -30px;
+    text-align: center;
 
   }
 
