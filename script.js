@@ -102,8 +102,7 @@ function displayResult(result) {
     } else {
       winnerHouse.classList.remove('none'); 
     }
-
-  },2000);
+  }, 1000);
 }
 
 function updateScore(result) {
