@@ -75,7 +75,7 @@ function updateMoves(userMove, computerMove) {
     houseBtnImg.classList.remove('none');
     houseBtnImg.src = images[computerMove];
     findWinner(userMove, computerMove);
-  },1000);
+  }, 500);
 }
 
 function findWinner(userMove, computerMove) {
@@ -102,7 +102,7 @@ function displayResult(result) {
     } else {
       winnerHouse.classList.remove('none'); 
     }
-  }, 1000);
+  }, 700);
 }
 
 function updateScore(result) {
