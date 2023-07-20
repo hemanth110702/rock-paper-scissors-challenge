@@ -1,9 +1,30 @@
+:root {
+
+  /* colors */
+  --background-gradient-start: hsl(214, 47%, 23%);
+  --background-gradient-end: hsl(237, 49%, 15%);
+  --scissors-gradient-start: hsl(39, 89%, 49%);
+  --scissors-gradient-end: hsl(40, 84%, 53%);
+  --paper-gradient-start: hsl(230, 89%, 62%);
+  --paper-gradient-end: hsl(230, 89%, 65%);
+  --rock-gradient-start: hsl(349, 71%, 52%);
+  --rock-gradient-end: hsl(349, 70%, 56%);
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header-outline: hsl(217, 16%, 45%);
+
+  /* font-weigths */ 
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+
+}
+
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  background: radial-gradient(circle 100vh at 50% 0%, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background: radial-gradient(circle 100vh at 50% 0%, var(--background-gradient-start), var(--background-gradient-end));
   min-height: 100vh;
-  margin: 0; /* Add margin to remove default body margin */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  margin: 0;
+  overflow-x: hidden; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +37,7 @@ body {
 }
 
 .container {
-  width: 700px;
+  width: var(--font-weight-700);
   height: 420px;
   display: flex;
   flex-direction: column;
@@ -26,18 +47,18 @@ body {
 .score-container {
   width: 450px;
   height: 60px;
-  border: 2px solid hsl(217, 16%, 45%);
+  border: 2px solid var(--header-outline);
   border-radius: 8px;
+  padding: 2%;
   display: flex;
   justify-content: space-between;
-  padding: 2%;
 }
 
 .score-board {
   width: 90px;
   font-size: 10px;
   text-align: center;
-  color: hsl(229, 64%, 46%);
+  color: var(--score-text);
   background-color: white;
   border-radius: 4px;
   padding: 10px;
@@ -53,8 +74,8 @@ body {
 
 .score {
   font-size: 30px;
-  font-weight: 700;
-  color: hsl(229, 25%, 31%);
+  font-weight: var(--font-weight-700);
+  color: var(--dark-text);
   margin: 0;
 }
 
@@ -80,11 +101,11 @@ body {
 .btn-style {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   background-color: rgb(230, 230, 230);
-  cursor: pointer;
-  box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   border: none;
+  box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .btn-style img {
@@ -95,8 +116,8 @@ body {
 .paper {
   width: 130px;
   height: 130px;
+  background: radial-gradient(var(--paper-gradient-start), var(--paper-gradient-end));
   border-radius: 50%;
-  background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
   display: flex;  
   box-shadow: inset 0px -5px  0px rgba(0, 0, 0, 0.2);
 }
@@ -104,8 +125,8 @@ body {
 .scissors {
   width: 130px;
   height: 130px;
+  background: radial-gradient(var(--scissors-gradient-start), var(--scissors-gradient-start));
   border-radius: 50%;
-  background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
   display: flex;  
   box-shadow: inset 0px -5px  0px rgba(0, 0, 0, 0.2);
 }
@@ -113,8 +134,8 @@ body {
 .rock {
   width: 130px;
   height: 130px;
+  background: radial-gradient(var(--rock-gradient-start), var(--rock-gradient-end));
   border-radius: 50%;
-  background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
   display: flex;  
   box-shadow: inset 0px -5px  0px rgba(0, 0, 0, 0.2); 
 }
@@ -133,14 +154,14 @@ body {
 
 .picked-container {
   width: 500px;
-  display: flex;
-  justify-content: space-around;
   height: 250px;
-  margin-top: 10%;
-  font-weight: 600;
+  font-weight: var(--font-weight-600);
   font-size: 13px;
   text-align: center;
+  margin-top: 10%;
   color: white;
+  display: flex;
+  justify-content: space-around;
 }
 
 .house-header, 
@@ -153,14 +174,14 @@ body {
 }
 
 .null-house {
-  background-color: hsl(237, 49%, 15%);
-  opacity: 0.6;
   width: 100px;
   height: 100px;
+  background-color: var(--background-gradient-end);
+  border-radius: 50%;
+  border: none;
   align-self: center;
   justify-self: center;
-  border: none;
-  border-radius: 50%;
+  opacity: 0.6;
 }
 
 .house-btn-img, 
@@ -175,45 +196,45 @@ body {
 }
 
 .result-container {
-  align-self: center;
   margin-right: 10%;
   margin-left: 5%;
+  align-self: center;
 }
 
 .play-again-button {
   width: 150px;
   height: 40px;
+  font-size: smaller;
+  font-weight: var(--font-weight-600);
+  letter-spacing: 2px;
   border-radius: 5px;
   border: none;
-  color: hsl(229, 25%, 31%);
-  font-size: smaller;
-  font-weight: 600;
-  cursor: pointer;
+  color: var(--dark-text);
   padding: 10px ;
-  letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .youWinLose {
   width: 150px;
   font-size: 2rem;
-  margin: 0;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   text-align: center;
   letter-spacing: 2px;
+  margin: 0;
   margin-bottom: 10px;
 }
 
 
 .house-picked,
 .user-picked {
+  position: relative;
   width: 150px;
   height: 220px;
+  margin-left: 5%;
+  margin-right: 5%;
   display: flex;
   flex-direction: column;
   cursor: context-menu;
-  margin-left: 5%;
-  margin-right: 5%;
-  position: relative;
 }
 
 .user-house {
@@ -252,30 +273,30 @@ body {
   position: absolute;
   right: 5%;
   bottom: 20%;
-  border: 1.5px solid hsl(217, 16%, 45%);
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: hsl(237, 49%, 15%);
-  color: white;
   font-size: 9px;
   font-weight: bolder;
   letter-spacing: 1.5px;
+  background-color: var(--background-gradient-end);
+  color: white;
+  border: 1.5px solid var(--header-outline);
+  border-radius: 4px;
   padding: 8px 25px;
+  cursor: pointer;
 }
 
 .rules-container {
-  display: flex;
-  flex-direction: column ;
   position: fixed;
-  margin: auto auto;
+  width: 210px;
+  height: 240px;
   top: 23%;
   left: 39%;
+  margin: auto auto;
   background-color: white;
   box-shadow:  0 0 490px black;
   border-radius: 5px;
   padding: 20px;
-  width: 210px;
-  height: 240px;
+  display: flex;
+  flex-direction: column ;
 }
 
 
@@ -288,20 +309,20 @@ body {
 }
 
 .rules-header {
+  font-size: larger;
+  font-weight: var(--font-weight-700);
+  color: var(--dark-text);
   display: flex;
   justify-content: space-between;
-  font-size: larger;
-  font-weight: 700;
-  color: hsl(229, 25%, 31%);
 }
 
 .close-icon {
   position: absolute;
-  color: hsl(217, 16%, 45%);
   font-weight: lighter;
+  color: var(--header-outline);
   margin-right: 10px;
-  cursor: pointer;
   right: 5px;
+  cursor: pointer;
 
 }
 
@@ -325,7 +346,7 @@ body {
   .container {
     width: 300px;
     margin: 0;
-    padding-top: 50px; /* Adjust the value to set the desired space between container and top of the page */
+    padding-top: 50px;
     padding: 20px;
   }
 
@@ -401,18 +422,18 @@ body {
 
   .rules-container {
     position: static;
-    box-shadow:  none;
     margin-top: 30%;
+    box-shadow:  none;
   }
 
   .bg-white {
-    width: 100%;
-    height: 100%;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
+    height: 100%;
     background-color: white;
     z-index: 1000;
   }
@@ -426,10 +447,10 @@ body {
     height: 280px; 
     margin-top: 20%;
     display: grid;
-    grid-template-columns: 80px 80px;
-    grid-template-rows: 250px 50px;
     justify-content: space-between;
     align-content: center;
+    grid-template-columns: 80px 80px;
+    grid-template-rows: 250px 50px;
     grid-template-areas: 
           'user-picked house-picked'
           'resultContainer resultContainer';
@@ -521,7 +542,7 @@ body {
     height: 40px;
     border-radius: 5px;
     border: none;
-    color: hsl(229, 25%, 31%);
+    color: var(--dark-text);
     padding: 10px ;
     letter-spacing: 2px;
     cursor: pointer;
@@ -530,16 +551,13 @@ body {
   .youWinLose {
     width: 100%;
     font-size: 2.2rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-700);
     margin: 0;
 
   }
 
-  
-
-.attribution {
-  display: none;
-}
-
+  .attribution {
+    display: none;
+  }
 
 }
