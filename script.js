@@ -75,7 +75,7 @@ function updateMoves(userMove, computerMove) {
     houseBtnImg.classList.remove('none');
     houseBtnImg.src = images[computerMove];
     findWinner(userMove, computerMove);
-  },2000);
+  },1000);
 }
 
 function findWinner(userMove, computerMove) {
