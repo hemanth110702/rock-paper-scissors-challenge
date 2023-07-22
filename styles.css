@@ -37,6 +37,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: var(--font-weight-700);
   height: 420px;
   display: flex;
@@ -285,11 +286,11 @@ body {
 }
 
 .rules-container {
-  position: fixed;
+  position: absolute;
   width: 210px;
   height: 240px;
   top: 23%;
-  left: 39%;
+  left: 20%;
   margin: auto auto;
   background-color: white;
   box-shadow:  0 0 490px black;
