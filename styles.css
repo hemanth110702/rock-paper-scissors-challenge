@@ -296,12 +296,12 @@ body {
 }
 
 .show-rules {
-  position: absolute;
-  top: 23%;
-  left: 23%;
+  margin: 50% 50%;
 }
 
 .rules-container {
+  position: absolute;
+  left: 50%;
   width: 210px;
   height: 240px;
   background-color: white;
@@ -424,7 +424,7 @@ body {
   }
 
   .close-icon {
-    bottom: 10%;
+    bottom: -50%;
     left: 45%;
   }
 
@@ -434,8 +434,11 @@ body {
   }
 
   .rules-container {
-    position: static;
-    margin-top: 30%;
+    position: absolute;
+    height: 250px;
+    top: 20%;
+    left: 20%;
+    margin: 0;
     box-shadow:  none;
   }
 
