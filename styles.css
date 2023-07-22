@@ -37,7 +37,6 @@ body {
 }
 
 .container {
-  position: relative;
   width: var(--font-weight-700);
   height: 420px;
   display: flex;
@@ -106,15 +105,12 @@ body {
   border-radius: 50%;
   border: none;
   box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .btn-style img {
   width: 40px;
   height: 45px;
-}
-
-.backlit, .backlit button {
-  cursor: pointer;
 }
 
 .paper {
@@ -142,12 +138,6 @@ body {
   border-radius: 50%;
   display: flex;  
   box-shadow: inset 0px -5px  0px rgba(0, 0, 0, 0.2); 
-}
-
-.backlit:hover {
-  box-shadow: 0px 0px 18px rgba(255, 255, 255, 1),
-  inset 0px -5px  0px rgba(0, 0, 0, 0.2);
-  
 }
 
 .input-paper-scissors {
@@ -205,6 +195,11 @@ body {
   font-weight: 700;
 }
 
+.result-container {
+  margin-right: 10%;
+  margin-left: 5%;
+  align-self: center;
+}
 
 .play-again-button {
   width: 150px;
@@ -217,12 +212,6 @@ body {
   color: var(--dark-text);
   padding: 10px ;
   cursor: pointer;
-}
-
-.result-container {
-  margin-right: 10%;
-  margin-left: 5%;
-  align-self: center;
 }
 
 .youWinLose {
@@ -295,15 +284,13 @@ body {
   cursor: pointer;
 }
 
-.show-rules {
-  position: absolute;
-  top: 20%;
-  left: 23%;
-}
-
 .rules-container {
+  position: fixed;
   width: 210px;
   height: 240px;
+  top: 23%;
+  left: 39%;
+  margin: auto auto;
   background-color: white;
   box-shadow:  0 0 490px black;
   border-radius: 5px;
@@ -330,7 +317,7 @@ body {
 }
 
 .close-icon {
-  position: static;
+  position: absolute;
   font-weight: lighter;
   color: var(--header-outline);
   margin-right: 10px;
@@ -340,9 +327,6 @@ body {
 }
 
 .icon-close {
-  position: absolute;
-  top: 7%;
-  right: 5%;
   width: 25px;
   height: 20px;
   font-weight: bolder;
@@ -426,10 +410,9 @@ body {
     transform: translateX(-50%);
   }
 
-  .icon-close {
-    top: 150%;
-    right: 50%;
-    bottom: 0;
+  .close-icon {
+    bottom: 10%;
+    left: 45%;
   }
 
   .rules-header {
@@ -438,11 +421,8 @@ body {
   }
 
   .rules-container {
-    position: absolute;
-    height: 250px;
-    top: 20%;
-    left: 15%;
-    margin: 0;
+    position: static;
+    margin-top: 30%;
     box-shadow:  none;
   }
 
@@ -556,8 +536,6 @@ body {
     background-color: rgba(255, 255, 255, 0.03); 
     z-index: -4;
   }
-
-  
 
   .play-again-button {
     width: 150px;
