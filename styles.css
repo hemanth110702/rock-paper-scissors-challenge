@@ -296,12 +296,12 @@ body {
 }
 
 .show-rules {
-  margin: 50% 50%;
+  position: absolute;
+  top: 20%;
+  left: 23%;
 }
 
 .rules-container {
-  position: absolute;
-  left: 50%;
   width: 210px;
   height: 240px;
   background-color: white;
@@ -330,7 +330,7 @@ body {
 }
 
 .close-icon {
-  position: absolute;
+  position: static;
   font-weight: lighter;
   color: var(--header-outline);
   margin-right: 10px;
@@ -340,6 +340,9 @@ body {
 }
 
 .icon-close {
+  position: absolute;
+  top: 7%;
+  right: 5%;
   width: 25px;
   height: 20px;
   font-weight: bolder;
@@ -423,9 +426,10 @@ body {
     transform: translateX(-50%);
   }
 
-  .close-icon {
-    bottom: -50%;
-    left: 45%;
+  .icon-close {
+    top: 150%;
+    right: 50%;
+    bottom: 0;
   }
 
   .rules-header {
@@ -437,7 +441,7 @@ body {
     position: absolute;
     height: 250px;
     top: 20%;
-    left: 20%;
+    left: 15%;
     margin: 0;
     box-shadow:  none;
   }
@@ -552,6 +556,8 @@ body {
     background-color: rgba(255, 255, 255, 0.03); 
     z-index: -4;
   }
+
+  
 
   .play-again-button {
     width: 150px;
