@@ -37,6 +37,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: var(--font-weight-700);
   height: 420px;
   display: flex;
@@ -105,12 +106,15 @@ body {
   border-radius: 50%;
   border: none;
   box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 
 .btn-style img {
   width: 40px;
   height: 45px;
+}
+
+.backlit, .backlit button {
+  cursor: pointer;
 }
 
 .paper {
@@ -138,6 +142,12 @@ body {
   border-radius: 50%;
   display: flex;  
   box-shadow: inset 0px -5px  0px rgba(0, 0, 0, 0.2); 
+}
+
+.backlit:hover {
+  box-shadow: 0px 0px 18px rgba(255, 255, 255, 1),
+  inset 0px -5px  0px rgba(0, 0, 0, 0.2);
+  
 }
 
 .input-paper-scissors {
@@ -195,11 +205,6 @@ body {
   font-weight: 700;
 }
 
-.result-container {
-  margin-right: 10%;
-  margin-left: 5%;
-  align-self: center;
-}
 
 .play-again-button {
   width: 150px;
@@ -212,6 +217,12 @@ body {
   color: var(--dark-text);
   padding: 10px ;
   cursor: pointer;
+}
+
+.result-container {
+  margin-right: 10%;
+  margin-left: 5%;
+  align-self: center;
 }
 
 .youWinLose {
@@ -284,13 +295,15 @@ body {
   cursor: pointer;
 }
 
+.show-rules {
+  position: absolute;
+  top: 23%;
+  left: 23%;
+}
+
 .rules-container {
-  position: fixed;
   width: 210px;
   height: 240px;
-  top: 23%;
-  left: 39%;
-  margin: auto auto;
   background-color: white;
   box-shadow:  0 0 490px black;
   border-radius: 5px;
