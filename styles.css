@@ -121,6 +121,7 @@ body {
   border-radius: 50%;
   display: flex;  
   box-shadow: inset 0px -5px  0px rgba(0, 0, 0, 0.2);
+  transition: width 0.5s, height 0.5s;
 }
 
 .scissors {
@@ -130,6 +131,7 @@ body {
   border-radius: 50%;
   display: flex;  
   box-shadow: inset 0px -5px  0px rgba(0, 0, 0, 0.2);
+  transition: width 0.5s, height 0.5s;
 }
 
 .rock {
@@ -139,6 +141,12 @@ body {
   border-radius: 50%;
   display: flex;  
   box-shadow: inset 0px -5px  0px rgba(0, 0, 0, 0.2); 
+  transition: width 0.5s, height 0.5s;
+}
+
+.paper:hover,.rock:hover,.scissors:hover {
+  width: 150px;
+  height: 150px;
 }
 
 .input-paper-scissors {
@@ -213,6 +221,11 @@ body {
   color: var(--dark-text);
   padding: 10px ;
   cursor: pointer;
+  transition: font-size 0.4s;
+}
+
+.play-again-button:hover {
+  font-size: larger;
 }
 
 .youWinLose {
@@ -224,7 +237,6 @@ body {
   margin: 0;
   margin-bottom: 10px;
 }
-
 
 .house-picked,
 .user-picked {
@@ -324,7 +336,6 @@ body {
   margin-right: 10px;
   right: 5px;
   cursor: pointer;
-
 }
 
 .icon-close {
@@ -332,7 +343,6 @@ body {
   height: 20px;
   font-weight: bolder;
 }
-
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
