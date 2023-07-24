@@ -30,7 +30,7 @@ Users should be able to:
 ![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/b540b79c-fa8f-4bee-91f4-1b40591856be)
 
 **Mobile-view**<br>
-<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/7358e426-6c77-4f97-930c-2a01a2c64252" width="400" height="600" />
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/7358e426-6c77-4f97-930c-2a01a2c64252" width="150" height="400" />
 
 **Onclick of mobile view.**<br>
 <img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/8c3348d1-de0a-469b-8044-feaeafaf5729" width="400" height="600" />
