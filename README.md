@@ -33,13 +33,13 @@ Users should be able to:
 <img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/7358e426-6c77-4f97-930c-2a01a2c64252" width="200" height="400" />
 
 **Onclick of mobile view.**<br>
-<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/8c3348d1-de0a-469b-8044-feaeafaf5729" width="400" height="600" />
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/8c3348d1-de0a-469b-8044-feaeafaf5729" width="200" height="400" />
 
 **The House picked**<br>
-<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/3e6ba9c8-436f-4a91-93a2-24f17f5ec8af" width="400" height="600" />
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/3e6ba9c8-436f-4a91-93a2-24f17f5ec8af" width="200" height="400" />
 
 **Win or Lose**<br>
-<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/30966770-b3bc-4816-9079-2c7b172e98d9" width="400" height="600" />
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/30966770-b3bc-4816-9079-2c7b172e98d9" width="200" height="400" />
 
 
 ### Links
