@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Screenshot
 **Desktop-view**
-![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/d9904e7b-dcc3-40da-a7ce-765d2a122f4b)
+<img src="(https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/d9904e7b-dcc3-40da-a7ce-765d2a122f4b" width="800" />
 
 **Active state.**
 ![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/d8ffd55d-c54c-4bfb-95ea-47aaef11d25b)
@@ -30,7 +30,7 @@ Users should be able to:
 ![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/b540b79c-fa8f-4bee-91f4-1b40591856be)
 
 **Mobile-view**<br>
-<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/7358e426-6c77-4f97-930c-2a01a2c64252" width="200" height="400" />
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/7358e426-6c77-4f97-930c-2a01a2c64252" width="320"/>
 
 **Onclick of mobile view.**<br>
 <img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/8c3348d1-de0a-469b-8044-feaeafaf5729" width="200" height="400" />
