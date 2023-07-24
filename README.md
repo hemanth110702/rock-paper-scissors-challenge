@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Screenshot
 **Desktop-view**
-<img src="(https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/d9904e7b-dcc3-40da-a7ce-765d2a122f4b" width="600" />
+<img src="(https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/d9904e7b-dcc3-40da-a7ce-765d2a122f4b" width="500" height="300" />
 
 **Active state.**
 ![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/d8ffd55d-c54c-4bfb-95ea-47aaef11d25b)
