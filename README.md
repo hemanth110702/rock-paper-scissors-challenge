@@ -11,35 +11,35 @@ Users should be able to:
 - Maintain the state of the score after refreshing the browser 
 
 ### Screenshot
-**Desktop-view**
+**Desktop-view**<br>
 <img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/d9904e7b-dcc3-40da-a7ce-765d2a122f4b" width="800" height="400" />
 
-**Active state.**
-![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/d8ffd55d-c54c-4bfb-95ea-47aaef11d25b)
+**Active state.**<br>
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/d8ffd55d-c54c-4bfb-95ea-47aaef11d25b" width="800" height="400" />
 
-**Onclick.**
-![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/bf3cddc8-f2c8-49c0-9a35-c021187fd841)
+**Onclick.**<br>
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/bf3cddc8-f2c8-49c0-9a35-c021187fd841" width="800" height="400" />
 
-**The House Picked.**
-![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/aa4b9e37-7f09-4ccf-83c1-b75b527ff761)
+**The House Picked.**<br>
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/aa4b9e37-7f09-4ccf-83c1-b75b527ff761" width="800" height="400" />
 
-**You Win.**
-![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/1d4ba94f-ae47-45a1-aefd-9bcc7a092d14)
+**You Win.**<br>
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/1d4ba94f-ae47-45a1-aefd-9bcc7a092d14" width="800" height="400" />
 
-**You Lose.**
-![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/b540b79c-fa8f-4bee-91f4-1b40591856be)
+**You Lose.**<br>
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/b540b79c-fa8f-4bee-91f4-1b40591856be" width="800" height="400" />
 
 **Mobile-view**<br>
-<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/7358e426-6c77-4f97-930c-2a01a2c64252" width="320"/>
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/7358e426-6c77-4f97-930c-2a01a2c64252" width="250" height="400"/>
 
 **Onclick of mobile view.**<br>
-<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/8c3348d1-de0a-469b-8044-feaeafaf5729" width="200" height="400" />
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/8c3348d1-de0a-469b-8044-feaeafaf5729" width="250" height="400" />
 
 **The House picked**<br>
-<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/3e6ba9c8-436f-4a91-93a2-24f17f5ec8af" width="200" height="400" />
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/3e6ba9c8-436f-4a91-93a2-24f17f5ec8af" width="250" height="400" />
 
 **Win or Lose**<br>
-<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/30966770-b3bc-4816-9079-2c7b172e98d9" width="200" height="400" />
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/30966770-b3bc-4816-9079-2c7b172e98d9" width="250" height="400" />
 
 
 ### Links
