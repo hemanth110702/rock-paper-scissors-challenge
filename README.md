@@ -30,15 +30,15 @@ Users should be able to:
 ![image](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/b540b79c-fa8f-4bee-91f4-1b40591856be)
 
 **Mobile-view**<br>
-![1](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/7358e426-6c77-4f97-930c-2a01a2c64252)
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/7358e426-6c77-4f97-930c-2a01a2c64252" width="400" height="600" />
 
 **Onclick of mobile view.**<br>
-![2](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/8c3348d1-de0a-469b-8044-feaeafaf5729)
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/8c3348d1-de0a-469b-8044-feaeafaf5729" width="400" height="600" />
 
-**The House picked**
-![3](https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/3e6ba9c8-436f-4a91-93a2-24f17f5ec8af)
+**The House picked**<br>
+<img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/3e6ba9c8-436f-4a91-93a2-24f17f5ec8af" width="400" height="600" />
 
-**Win or Lose**
+**Win or Lose**<br>
 <img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/30966770-b3bc-4816-9079-2c7b172e98d9" width="400" height="600" />
 
 
