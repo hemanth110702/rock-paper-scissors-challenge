@@ -144,7 +144,7 @@ body {
   transition: width 0.5s, height 0.5s;
 }
 
-.paper:hover,.rock:hover,.scissors:hover {
+.step-1 .paper:hover,.step-1 .rock:hover,.step-1 .scissors:hover {
   width: 150px;
   height: 150px;
 }
@@ -409,6 +409,11 @@ body {
     width: 105px;
     height: 105px;
   }
+
+  .step-1 .paper:hover,.step-1 .rock:hover,.step-1 .scissors:hover {
+    width: 105px;
+    height: 105px;
+  }
   
   .input-paper-scissors {
     width: 250px;
@@ -557,6 +562,10 @@ body {
     padding: 10px ;
     letter-spacing: 2px;
     cursor: pointer;
+  }
+  
+  .play-again-button:hover {
+    font-size: smaller;
   }
   
   .youWinLose {
