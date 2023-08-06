@@ -73,7 +73,7 @@ Users should be able to:
     </tr>
     <tr>
         <td>
-            <img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/128df684-648c-45b9-a724-f39ad0514f85" width="100%" title="Desktop view - house-picked"/>
+            <img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/9277fe07-1302-4818-ac0d-5e50b1a72b87" width="100%" title="Desktop view - house-picked"/>
         </td>
         <td>
             <img src="https://github.com/hemanth110702/rock-paper-scissors-challenge/assets/89832451/3e6ba9c8-436f-4a91-93a2-24f17f5ec8af9" width="100%" title="Mobile view - house-picked"/>
